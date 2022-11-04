@@ -1,0 +1,22 @@
+﻿@model RazorExample1.Models.Siparis
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div class="row"
+         <div class="col-md-4">
+             <img src="~/img/@Model.Resim"/>
+         </div>
+         <div class="col-md-8">
+             <h2 class="page-header">@Model.SiparisAdi</h2>
+             <p>
+                @Model.Aciklama
+             </p>
+             <p>
+                 @Model.KargoUcreti
+             </p>
+         </div>
+</div>
+
